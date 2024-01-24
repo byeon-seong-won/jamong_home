@@ -1,0 +1,203 @@
+/*---------- 웹폰트 CDN ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Gothic', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Exo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&display=swap');
+/* font-family: 'Bellota', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*---------- 아이콘폰트 CDN ----------*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); 
+
+
+
+
+/*---------- 공통 속성 ----------*/
+*{ margin: 0;padding: 0;font-family: 'Montserrat', 'Noto sans KR', sans-serif;word-break: keep-all;letter-spacing: -0.05em;}
+html, body {width: 100%;height: 100%;}
+html {overflow-y: scroll; overflow-x: hidden; } 
+article,aside,details,summary,figcaption,figure,
+footer,header,hgroup,main,nav,section {display: block;}
+li {list-style-type: none;} 
+a {text-decoration: none;color: inherit;} 
+table {border-collapse: collapse;}
+input, select {vertical-align: middle;}
+button,
+input[type=button],
+input[type=submit],
+input[type=reset]{cursor: pointer;}
+button,input{outline: none;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight: normal; margin-top: 0; }
+img{vertical-align:top;font-size:0;border:0;}
+
+
+
+
+
+
+
+
+/* /////////// 공통 /////////// */
+.scrdown {position: absolute;bottom: 0;right: 60px;text-align: center;z-index: 50000;display: block;padding: 0 13px;}
+.scrdown>div {height: 100px;width: 1px;background-color: #fff;margin: 0 auto;}
+.scrdown>p {font-size: 14px;color: #fff;writing-mode: vertical-rl;transform: rotate(180deg);text-transform: uppercase;margin-bottom: 20px;}
+.cpyright {position: absolute;bottom: 60px;left: 60px;color: #999898;font-size: 14px;z-index: 50000;}
+#fp-nav ul {row-gap: 10px;display: flex;flex-direction: column;}
+#fp-nav ul li {width: 24px;height: 24px;text-align: center !important;}
+#fp-nav ul li a span {width: 6px;height: 6px;margin: 0 !important;transform: translate(-50%,-50%) !important;}
+#fp-nav ul li a.active span {width: 6px;height: 6px;margin: 0 !important;}
+#fp-nav.right {right: 60px;}
+#fullpage {width:100%;height:100%;}
+.section {width: 100%;height: 100%;box-sizing: border-box;}
+.section div.section_inner {
+  margin: 0 auto;
+  height: calc(100% - 120px);
+  width: calc(100% - 120px);
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+.cpyright {left: 40px;bottom: 40px;}
+
+
+
+
+/* section {position: relative;} */
+
+
+
+
+
+/* /////////// swiper 공통 속성 /////////// */
+.swiper-container {width: 100%;height: 100%;}
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 92% !important;  
+}
+
+
+
+
+
+
+/* /////////// header /////////// */
+header {
+    position: fixed;
+    top: 40px;
+    left: 60px;
+    width: calc(100% - 120px);
+    height: 60px;
+    z-index: 1000;
+    box-sizing: border-box;
+    /*line-height: 60px;*/
+}
+header nav {z-index: 1000;display: flex;justify-content: space-between;align-items: center;}
+header nav>h1 {display: table;}
+header nav>h1 a img {width: 200px;display: table-cell;vertical-align: middle;}
+header nav #menu {display: flex;justify-content: end;align-items: center;gap: 50px;}
+header nav #menu li a {
+    font-family: 'Montserrat', sans-serif !important;
+    color: rgba(31, 31, 31,0.5);
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+.index header nav #menu li.active {border-bottom: 4px solid #171717;}
+.index header nav #menu li.active a {color: #1e1e1e;}
+
+  
+
+/* sub 페이지 header */
+
+
+
+
+
+
+
+  
+  
+/* tablet & 큰 mobile 공통 */
+@media (max-width:1024px) {
+  header {
+    top: 20px;
+    left: 40px;
+    width: calc(100% - 80px);
+    height: 40px;
+    z-index: 1000;
+    box-sizing: border-box;
+    line-height: 40px;
+  }
+  header nav #menu {gap: 41px;}
+  header nav #menu li a {font-size: 16px;padding-bottom: 0;}
+
+  header nav>h1 a img{width:160px;}
+  #fp-nav.right{
+    right:30px;
+  }
+  .scrdown {right:20px;}
+  #fp-nav.right{
+    display:none;
+  }
+}
+  
+
+
+/* mobile */
+@media (max-width:770px) {
+    header {
+        top: 28px;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: 20px;
+        z-index: 1000;
+        box-sizing: border-box;
+        line-height: 20px;
+    }
+    header nav {flex-direction: column;gap: 20px;}
+    header nav #menu {gap: 41px; display:none;}
+    header nav #menu ul li a {font-size: 15px;}
+    
+    .scrdown {display: none;}
+
+}
+
+
+
+
+
+
+
