@@ -324,7 +324,7 @@ $(document).ready(function() {
               mm.add("(min-width: 1400px)", () => {
                 $('.swiperwrapper').show(0);
                 gsap.from(".swiperwrapper", {
-                  duration: 0.5,
+                  duration: 4,
                   opacity: 0,
                   yPercent: 100,
                   ease: "elastic.out",
